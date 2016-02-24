@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    table.table.table-striped
+      thead
+        td Username
+        td password
+      tbody
+        tr(ng-repeat='user in users')
+          td {{user.username}}
+          td {{user.password}}
+  
+    

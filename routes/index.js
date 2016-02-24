@@ -37,6 +37,20 @@ router.get('/logout', function(req, res) {
     res.redirect('/');
 });
 
+// get users
+
+router.get('/api/users', function(req, res){
+    Account.find(function(err, data){
+        console.log(data)
+        res.json(data)
+    })
+})
+
+router.get('/users', function(req, res){
+    res.render('users')
+})
+// find() res.json
+
 router.get('/ping', function(req, res){
     res.status(200).send("HOOOORAY");
 });
