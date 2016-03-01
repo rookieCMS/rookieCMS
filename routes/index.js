@@ -37,7 +37,7 @@ router.get('/logout', function(req, res) {
     res.redirect('/');
 });
 
-// get users
+// User API 
 
 router.get('/api/users', function(req, res){
     Account.find(function(err, data){
@@ -49,10 +49,9 @@ router.get('/api/users', function(req, res){
 router.get('/users', function(req, res){
     res.render('users')
 })
-// find() res.json
 
-router.get('/ping', function(req, res){
-    res.status(200).send("HOOOORAY");
+router.get('/partials/fixednav', function(req, res){
+    res.partial('fixednav')
 });
 
 module.exports = router;

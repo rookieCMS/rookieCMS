@@ -1,8 +1,37 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #8f9a9c;
 }
 
 a {
   color: #00B7FF;
+}
+
+.col-md-4.col-md-offset-4 {
+    min-height: 500px;
+    text-align: center;
+    
+}
+
+.btn {
+    margin: 20px;
+    min-width: 100px;
+    
+}
+
+
+.btn-sharp {
+  border-radius:0;
+}
+
+.form-control {
+    border-radius: 0px ;
+    height: 40px;
+    border: none;
+    margin: 0px;
+}
+
+form {
+    margin: 0px;
 }
