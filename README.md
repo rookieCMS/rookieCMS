@@ -1,5 +1,6 @@
 # rookieCMS
-:octocat:
+:octocat: MEAN+CRUD tool under development 
+:bulb: MongoDB, NODE.JS, EXRPESS, ANGULAR & JADE 
 
 
 ## want to open mongodb with a click?
