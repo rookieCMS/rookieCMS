@@ -4,7 +4,7 @@
 ___
 
 ## want to open mongodb with a click?
-_copy and rename the directory so it fits yours, place the file where you want_
+_copy and rename the directory so it fits yours, place the file where you want as a .bat file_
 
 <p>@echo off</p>
 <p>start D:\mongodb\bin\mongod --dbpath D:\data\db</p>
