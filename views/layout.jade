@@ -8,10 +8,11 @@ html(ng-app="admin")
   body(ng-controller="adminController")
       div.container
         block content
-        include ./partials/fixednav.jade
+        include ./nav/fixednav.jade
 
   script(src='http://code.jquery.com/jquery.js')
   script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js')
+   script(src='/app.js')
   script(src='./libs/angular/angular.js')
   script(src='./app/admin/admin.module.js')
   script(src='./app/admin/admin.controller.js')

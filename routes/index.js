@@ -46,12 +46,20 @@ router.get('/api/users', function(req, res){
     })
 })
 
+router.get('/api/posts', function(req, res){
+    Posts.find(function(err, data){
+        console.log(data)
+        res.json(data)
+    })
+})
+
 router.get('/users', function(req, res){
     res.render('users')
 })
 
-router.get('/partials/fixednav', function(req, res){
-    res.partial('fixednav')
+
+router.get('/partials/:name', function(req, res){
+    res.render('partials/' + name);
 });
 
 module.exports = router;

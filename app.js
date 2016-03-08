@@ -9,7 +9,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local');
 
 var routes = require('./routes/index');
-var users = require('./routes/users');
+var api = require('./routes/api')
 
 var app = express();
 
@@ -33,7 +33,17 @@ app.use(passport.session());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-app.use('/users', users);
+
+// routes
+//app.get('/', routes.index)
+app.get('/partials/:name'), routes.partials;
+
+app.get('/api/posts', api.posts);
+
+app.get('/api/post/:id', api.post);
+app.post('/api/post', api.addPost);
+app.put('/api/post/:id', api.editPost);
+app.delete('/api/post/:id', api.deletePost);
 
 // passport configuration
 
